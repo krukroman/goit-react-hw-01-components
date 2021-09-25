@@ -1,5 +1,5 @@
 import s from './Profile.module.css';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import defImg from './256px-No_image_available.svg.png';
 
 export default function Profile({ name, tag, location, avatar, stats }) {
@@ -44,13 +44,13 @@ Profile.defaultProps = {
 };
 
 Profile.propTypes = {
-  name: propTypes.string.isRequired,
-  tag: propTypes.string.isRequired,
-  location: propTypes.string.isRequired,
-  avatar: propTypes.string,
-  stats: propTypes.shape({
-    followers: propTypes.number.isRequired,
-    views: propTypes.number.isRequired,
-    likes: propTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
   }).isRequired,
 };
