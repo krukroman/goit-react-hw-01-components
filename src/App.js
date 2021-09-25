@@ -10,9 +10,7 @@ export default function App() {
         tag={userData.tag}
         location={userData.location}
         avatar={userData.avatar}
-        followers={userData.stats.followers}
-        views={userData.stats.views}
-        likes={userData.stats.likes}
+        stats={userData.stats}
       />
     </React.StrictMode>
   );
