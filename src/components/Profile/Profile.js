@@ -1,5 +1,6 @@
 import s from './Profile.module.css';
 import propTypes from 'prop-types';
+import defImg from './256px-No_image_available.svg.png';
 
 export default function Profile({ name, tag, location, avatar, stats }) {
   return (
@@ -27,6 +28,18 @@ export default function Profile({ name, tag, location, avatar, stats }) {
     </div>
   );
 }
+
+Profile.defaultProps = {
+  name: 'No name',
+  tag: 'No tag',
+  location: 'No location',
+  avatar: defImg,
+  stats: {
+    followers: 0,
+    views: 0,
+    likes: 0,
+  },
+};
 
 Profile.propTypes = {
   name: propTypes.string.isRequired,
