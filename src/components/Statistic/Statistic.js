@@ -25,14 +25,6 @@ export default function Statistic({ title, stats }) {
   );
 }
 
-Statistic.defaultProps = {
-  stats: {
-    id: '',
-    label: 'No label',
-    percentage: 0,
-  },
-};
-
 Statistic.propTypes = {
   title: propTypes.string,
   stats: propTypes.arrayOf(
