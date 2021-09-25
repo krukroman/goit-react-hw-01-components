@@ -1,0 +1,42 @@
+.statistics {
+  padding-block: 50px;
+}
+
+.container {
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+  width: max-content;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.title {
+  margin: 0;
+  padding-block: 20px;
+}
+
+.stat_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+}
+
+.item {
+  padding: 15px;
+  display: grid;
+  grid-gap: 5px;
+  place-items: center;
+  min-width: 100%;
+}
+
+.label {
+  color: #fff;
+}
+
+.percentage {
+  color: #fff;
+}
