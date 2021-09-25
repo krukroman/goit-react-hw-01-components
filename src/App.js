@@ -16,6 +16,7 @@ export default function App() {
           stats={userData.stats}
         />
         <Statistic title="Upload stats" stats={statisticData} />
+        <Statistic stats={statisticData} />
       </div>
     </React.StrictMode>
   );
