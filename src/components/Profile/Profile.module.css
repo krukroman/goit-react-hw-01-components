@@ -47,7 +47,7 @@
   justify-content: stretch;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
-  background-color: #b4ebfc;
+  background-color: #caf3ffbd;
 }
 
 .stats li {
